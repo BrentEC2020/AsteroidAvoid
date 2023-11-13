@@ -142,8 +142,15 @@ player = {
   pos: vec(G.WIDTH * 0.5 - 140, G.HEIGHT * 0.5 + 60)
 };
 
-  //left
-  if(input.isPressed) {
+// Initalise the values:
+enemies = [];
+
+waveCount = 0;
+currentEnemySpeed = 0;
+}
+
+//left
+if(input.isPressed) {
       play("jump");
       player.pos.x += 10;
       color("light_yellow")
@@ -164,13 +171,6 @@ player = {
         player.pos.x = 0;
       }
   }
-
-// Initalise the values:
-enemies = [];
-
-waveCount = 0;
-currentEnemySpeed = 0;
-}
 
 color("black");
 // box(player.pos, 4);
