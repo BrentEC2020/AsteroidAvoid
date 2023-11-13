@@ -144,7 +144,7 @@ player = {
 
 document.addEventListener('keydown', function(event) {
   //left
-  if(input.isPressed) {
+  if(input.isJustPressed) {
       play("jump");
       player.pos.x += 10;
       color("light_yellow")
