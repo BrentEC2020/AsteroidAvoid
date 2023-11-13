@@ -142,7 +142,6 @@ player = {
   pos: vec(G.WIDTH * 0.5 - 140, G.HEIGHT * 0.5 + 60)
 };
 
-document.addEventListener('keydown', function(event) {
   //left
   if(input.isJustPressed) {
       play("jump");
@@ -165,7 +164,6 @@ document.addEventListener('keydown', function(event) {
         player.pos.x = 0;
       }
   }
-});
 
 // Initalise the values:
 enemies = [];
